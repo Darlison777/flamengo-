@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Flamengo</title>
+  <link rel="icon" type="image/png" href="https://p1.hiclipart.com/preview/766/265/202/brasileirao-iconkit-2009-flamengo-png-clipart.jpg">
+  
+  <style>
+    * {
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #313131;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .titulo {
+      font-family: fantasy;
+      color: red;
+      font-size: 50px;
+    }
+
+    .cartao {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 350px;
+      padding: 25px;
+      background-color: rgba(63, 63, 63, 0.4);
+      border-radius: 10px;
+    }
+
+    .hino {
+      font-family: fantasy;
+      color: white;
+      text-align: center;
+      display: none;
+      margin-top: 20px;
+    }
+
+    .button {
+      margin-top: 20px;
+    }
+
+    .icon img {
+      width: 250px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+ #java escript
+  <script>
+    function toggleTexto() {
+      const texto = document.getElementById("textoCompleto");
+      const botao = document.getElementById("btnToggle");
+
+      if (texto.style.display === "none" || texto.style.display === "") {
+        texto.style.display = "block";
+        botao.textContent = "Mostrar menos";
+      } else {
+        texto.style.display = "none";
+        botao.textContent = "Mostrar mais";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h1 class="titulo">Clube de Regatas do Flamengo</h1>
+
+  <div class="cartao">
+    <div class="icon">
+      <img src="https://icons.iconarchive.com/icons/giannis-zographos/south-american-football-club/256/Flamengo-icon.png" alt="Escudo do Flamengo">
+    </div>
+
+    <div class="hino" id="textoCompleto">
+      <p>
+        Uma vez Flamengo, sempre Flamengo <br>
+        Flamengo sempre eu hei de ser <br>
+        É meu maior prazer vê-lo brilhar <br>
+        Seja na terra, seja no mar <br>
+        Vencer, vencer, vencer! <br>
+        Uma vez Flamengo, Flamengo até morrer! <br><br>
+
+        Na regata, ele me mata <br>
+        Me maltrata, me arrebata <br>
+        Que emoção no coração! <br>
+        Consagrado no gramado <br>
+        Sempre amado, o mais cotado <br>
+        Nos Fla-Flus é o Ai, Jesus! <br><br>
+
+        Eu teria um desgosto profundo <br>
+        Se faltasse o Flamengo no mundo <br>
+        Ele vibra, ele é fibra <br>
+        Muita libra já pesou <br>
+        Flamengo até morrer eu sou! <br>
+      </p>
+    </div>
+
+    <div class="button">
+      <button onclick="toggleTexto()" id="btnToggle">Mostrar mais</button>
+    </div>
+  </div>
+</body>
+</html>
